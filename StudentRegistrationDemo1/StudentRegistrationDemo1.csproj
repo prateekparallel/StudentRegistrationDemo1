@@ -71,16 +71,24 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Controllers\StudentDeleteController.svc" />
     <Content Include="Controllers\StudentRegistrationController.svc" />
     <Content Include="Controllers\StudentRetriveController.svc" />
+    <Content Include="Controllers\StudentUpdateController.svc" />
     <Content Include="Web.config" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Controllers\StudentDeleteController.svc.cs">
+      <DependentUpon>StudentDeleteController.svc</DependentUpon>
+    </Compile>
     <Compile Include="Controllers\StudentRegistrationController.svc.cs">
       <DependentUpon>StudentRegistrationController.svc</DependentUpon>
     </Compile>
     <Compile Include="Controllers\StudentRetriveController.svc.cs">
       <DependentUpon>StudentRetriveController.svc</DependentUpon>
+    </Compile>
+    <Compile Include="Controllers\StudentUpdateController.svc.cs">
+      <DependentUpon>StudentUpdateController.svc</DependentUpon>
     </Compile>
     <Compile Include="Dataobject\Student.cs" />
     <Compile Include="Dataobject\StudentRegistration.cs" />
